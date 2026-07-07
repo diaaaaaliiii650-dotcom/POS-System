@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="customer.css">
+<link rel="stylesheet" href="responsive.css">
+<script src="https://kit.fontawesome.com/9b4eb7b55e.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!----sidebar start ----->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+            
+
+                <div class="logo-icon">
+                    <img src="logo.png" alt="">
+                    <h2>Shop managment</h2>
+                </div>
+                
+            </div>
+            <nav class="sidebar-nav">
+                <a href="website.html" class="nav-link active"><span><i class="fa-solid fa-house"></i></span>Home</a>
+                <a href="stockin.html" class="nav-link"><span><i class="fa-solid fa-arrow-trend-down"></i></span>Stock In</a>
+                <a href="sales.html" class="nav-link"><span><i class="fa-solid fa-tag"></i></span>sales</a>
+                <a href="customer.html" class="nav-link"><span><i class="fa-solid fa-user"></i></span>Costumer</a>
+                <a href="reports.html" class="nav-link"><span><i class="fa-solid fa-chart-area"></i></span>Reports</a>
+                <a href="#" class="nav-link"><span><i class="fa-solid fa-bars"></i></span>settings</a>
+
+            </nav>
+            <div class="sidebar-footer">
+                <img src="Shop Owner Profile.png" alt="user">
+                <div>
+                    <p class="user-name">John,s Groceries</p>
+                <p class="user-role">Admin Access</p>
+
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- SIDEBAR END -->
+
+    <!-- 2. MAIN CONTENT START -->
+    <main class="main-content">
+      
+        <!-- HEADER -->
+        <!-- TOPBAR START -->
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search products, orders, or customers...">
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-btn">🔔</button>
+      <button class="icon-btn">ⓘ</button>
+      <button class="btn-primary">+ New Sale</button>
+    </div>
+  </header>
+  <!-- TOPBAR END -->
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <header class="top-bar">
+        <input type="text" placeholder="🔍 Search customers by name or phone...">
+        <div class="user-info">
+            <span class="icon">🔔</span>
+            <span class="icon">?</span>
+            <button class="btn btn-green">New Sale</button>
+        </div>
+    </header>
+
+    <div class="page-header">
+        <div>
+            <h1>Customers</h1>
+            <p>Manage your customer relationships and credit balances.</p>
+        </div>
+        <div class="header-buttons">
+            <button class="btn btn-white">🔄 View History</button>
+            <button class="btn btn-green">+ Add Customer</button>
+        </div>
+    </div>
+
+    <!-- TOP CARDS -->
+    <section class="customer-top-cards">
+        <div class="credit-card">
+            <div>
+                <p class="card-label">TOTAL CUSTOMER CREDIT</p>
+                <h2>$12,450.00 <span>Pending Recovery</span></h2>
+                <div class="credit-stats">
+                    <small>● 12 Active this week</small>
+                    <small>● 3 Overdue accounts</small>
+                </div>
+            </div>
+            <div class="credit-icon">💳</div>
+        </div>
+        <div class="growth-card">
+            <p class="card-label">CUSTOMER GROWTH</p>
+            <h2>+18%</h2>
+            <div class="avatars">
+                <img src="https://i.pravatar.cc/25?img=1" alt="">
+                <img src="https://i.pravatar.cc/25?img=2" alt="">
+                <img src="https://i.pravatar.cc/25?img=3" alt="">
+                <span>New customers joined today</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER DIRECTORY TABLE -->
+    <section class="inventory-list">
+        <div class="list-header">
+            <h3>Customer Directory</h3>
+            <div class="list-icons">⚙️ ⬇️</div>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer Name</th>
+                    <th>Phone Number</th>
+                    <th>Status</th>
+                    <th>Current Balance</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><div class="avatar-circle">JD</div> <div><b>John Doe</b><br><small>Last visit 2h ago</small></div></td>
+                    <td>+1 (555) 012-3456</td>
+                    <td><span class="status in-stock">Active</span></td>
+                    <td>$0.00</td>
+                    <td>⋮</td>
+                </tr>
+                <tr>
+                    <td><div class="avatar-circle blue">AS</div> <div><b>Alice Smith</b><br><small>Last visit Yesterday</small></div></td>
+                    <td>+1 (555) 086-7654</td>
+                    <td><span class="status out-stock">Overdue</span></td>
+                    <td>$1,245.50</td>
+                    <td>⋮</td>
+                </tr>
+                <tr>
+                    <td><div class="avatar-circle">RB</div> <div><b>Robert Brown</b><br><small>Last visit 1 week ago</small></div></td>
+                    <td>+1 (555) 444-5555</td>
+                    <td><span class="status in-stock">Active</span></td>
+                    <td>$45.00</td>
+                    <td>⋮</td>
+                </tr>
+                <tr>
+                    <td><div class="avatar-circle blue">EM</div> <div><b>Emily Miller</b><br><small>Last visit 2 days ago</small></div></td>
+                    <td>+1 (555) 222-3333</td>
+                    <td><span class="status low-stock">Inactive</span></td>
+                    <td>$0.00</td>
+                    <td>⋮</td>
+                </tr>
+                <tr>
+                    <td><div class="avatar-circle">MK</div> <div><b>Michael Knight</b><br><small>Last visit 3 days ago</small></div></td>
+                    <td>+1 (555) 777-8888</td>
+                    <td><span class="status in-stock">Active</span></td>
+                    <td>$312.20</td>
+                    <td>⋮</td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="pagination">
+            <button class="active">1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>Next</button>
+        </div>
+    </section>
+</main>
+</div>
+</div>
+
+<script src="nav.js"></script>
+</body>
+</html>

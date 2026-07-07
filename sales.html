@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b4eb7b55e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="sales.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+    <!----sidebar start ----->
+    <aside class="sidebar">
+        <div class="sidebar-header">
+        
+
+            <div class="logo-icon">
+                <img src="logo.png" alt="">
+                <h2>Shop managment</h2>
+            </div>
+            
+        </div>
+        <nav class="sidebar-nav">
+            <a href="website.html" class="nav-link active"><span><i class="fa-solid fa-house"></i></span>Home</a>
+            <a href="stockin.html" class="nav-link"><span><i class="fa-solid fa-arrow-trend-down"></i></span>Stock In</a>
+            <a href="sales.html" class="nav-link"><span><i class="fa-solid fa-tag"></i></span>sales</a>
+            <a href="customer.html" class="nav-link"><span><i class="fa-solid fa-user"></i></span>Costumer</a>
+            <a href="reports.html" class="nav-link"><span><i class="fa-solid fa-chart-area"></i></span>Reports</a>
+            <a href="#" class="nav-link"><span><i class="fa-solid fa-bars"></i></span>settings</a>
+
+        </nav>
+        <div class="sidebar-footer">
+            <img src="Shop Owner Profile.png" alt="user">
+            <div>
+                <p class="user-name">John,s Groceries</p>
+            <p class="user-role">Admin Access</p>
+
+            </div>
+        </div>
+
+    </aside>
+
+    <!-- SIDEBAR END -->
+     <!-- MAIN CONTENT - SIRF YE CHANGE HOGA -->
+     <main class="main-content">
+        <header class="top-bar">
+            <input type="text" placeholder="🔍 Search products (Ctrl + K)...">
+            <div class="user-info">
+                <span class="icon">🔔</span>
+                <span class="icon">?</span>
+                <div class="profile">
+                    <div>
+                        <p>Alex Rivera</p>
+                        <small>Cashier #04</small>
+                    </div>
+                    <img src="https://i.pravatar.cc/40" alt="">
+                </div>
+            </div>
+        </header>
+
+        <div class="pos-layout">
+            <!-- LEFT: CART -->
+            <div class="pos-cart">
+                <div class="cart-header">
+                    <h2>🛒 Current Sale</h2>
+                    <div>
+                        <button class="btn btn-white">Clear Cart</button>
+                        <button class="btn btn-white">Hold Sale</button>
+                    </div>
+                </div>
+
+                <table class="cart-table">
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <b>Premium Arabica Coffee Beans</b><br>
+                                <small>SKU: COF-001 | 500g Bag</small>
+                            </td>
+                            <td><div class="qty-control"><button>-</button><span>2</span><button>+</button></div></td>
+                            <td>$18.50</td>
+                            <td>$37.00</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Sustainable Bamboo Filter Pack</b><br>
+                                <small>SKU: FL-22 | 100pcs</small>
+                            </td>
+                            <td><div class="qty-control"><button>-</button><span>1</span><button>+</button></div></td>
+                            <td>$12.99</td>
+                            <td>$12.99</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <b>Stainless Steel Milk Frother</b><br>
+                                <small>SKU: FR-06 | Professional Grade</small>
+                            </td>
+                            <td><div class="qty-control"><button>-</button><span>1</span><button>+</button></div></td>
+                            <td>$45.00</td>
+                            <td>$45.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="scan-text">Scan barcode or search to add more products</p>
+
+                <div class="quick-items">
+                    <h4>QUICK SELECT ITEMS</h4>
+                    <div class="quick-grid">
+                        <button>☕ Espresso Shot</button>
+                        <button>🥛 Latte</button>
+                        <button>🥐 Croissant</button>
+                        <button>🧁 Muffin</button>
+                    </div>
+                </div>
+                <button class="btn btn-blue small">F9 Quick Checkout</button>
+            </div>
+
+            <!-- RIGHT: SALE SUMMARY -->
+            <div class="pos-summary">
+                <h3>Sale Summary</h3>
+                <div class="summary-row"><p>Subtotal (4 items)</p><p>$94.99</p></div>
+                <div class="summary-row"><p>Tax (8%)</p><p>$7.60</p></div>
+                <div class="summary-row"><p>Discount</p><p class="red">-$5.00</p></div>
+                <hr>
+                <div class="summary-row total"><p>GRAND TOTAL</p><p>$97.59</p></div>
+
+                <div class="customer-box">
+                    <span>👤</span>
+                    <div>
+                        <p>Walk-in Customer</p>
+                        <small>Add Loyalty Card</small>
+                    </div>
+                    <span>+</span>
+                </div>
+
+                <div class="payment-buttons">
+                    <button class="btn btn-cash">💵 Cash</button>
+                    <button class="btn btn-card">💳 Card</button>
+                </div>
+                <button class="btn btn-complete">✓ Complete Sale</button>
+                <button class="btn btn-white full">🖨️ Print Receipt</button>
+            </div>
+        </div>
+    </main>
+</div>
+</div>
+    
+<script src="nav.js"></script>
+</body>
+</html>

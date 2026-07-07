@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="website.css">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9b4eb7b55e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <!----sidebar start ----->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+            
+
+                <div class="logo-icon">
+                    <img src="logo.png" alt="">
+                    <h2>Shop managment</h2>
+                </div>
+                
+            </div>
+            <nav class="sidebar-nav">
+                <a href="website.html" class="nav-link active"><span><i class="fa-solid fa-house"></i></span>Home</a>
+                <a href="stockin.html" class="nav-link"><span><i class="fa-solid fa-arrow-trend-down"></i></span>Stock In</a>
+                <a href="sales.html" class="nav-link"><span><i class="fa-solid fa-tag"></i></span>sales</a>
+                <a href="customer.html" class="nav-link"><span><i class="fa-solid fa-user"></i></span>Costumer</a>
+                <a href="reports.html" class="nav-link"><span><i class="fa-solid fa-chart-area"></i></span>Reports</a>
+                <a href="#" class="nav-link"><span><i class="fa-solid fa-bars"></i></span>settings</a>
+
+            </nav>
+            <div class="sidebar-footer">
+                <img src="Shop Owner Profile.png" alt="user">
+                <div>
+                    <p class="user-name">John,s Groceries</p>
+                <p class="user-role">Admin Access</p>
+
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- SIDEBAR END -->
+
+    <!-- 2. MAIN CONTENT START -->
+    <main class="main-content">
+      
+        <!-- HEADER -->
+        <!-- TOPBAR START -->
+  <!-- HEADER -->
+  <header class="topbar">
+    <div class="search-box">
+      <span class="search-icon">🔍</span>
+      <input type="text" placeholder="Search products, orders, or customers...">
+    </div>
+    <div class="topbar-actions">
+      <button class="icon-btn">🔔</button>
+      <button class="icon-btn">ⓘ</button>
+      <button class="btn-primary">+ New Sale</button>
+    </div>
+  </header>
+  <!-- TOPBAR END -->
+
+   <!-- DASHBOARD TITLE -->
+   <div class="dashboard-header">
+    <div>
+      <h1>Dashboard Overview</h1>
+      <p>Monitor your shop's performance in real-time.</p>
+    </div>
+    <div class="filter-tabs">
+      <button class="active">Today</button>
+      <button>Week</button>
+      <button>Month</button>
+      <button>Year</button>
+      <button>All</button>
+    </div>
+  </div>
+
+<section class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-header">
+            <p>Total Products</p>
+            <span class="stat-change up">▲ +4.2%</span>
+          </div>
+          <h3>1,284</h3>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <p>In Stock Items</p>
+            <span class="stat-cap">86% Cap</span>
+          </div>
+          <h3>42.5k</h3>
+        </div>
+        <div class="stat-card">
+          <div class="stat-header">
+            <p>Today's Sales</p>
+            <span class="stat-change up">▲ +12%</span>
+          </div>
+          <h3>$3,842</h3>
+        </div>
+        <div class="stat-card alert-card">
+          <div class="stat-header alert-header">
+            <p>⚠ Restock Now</p>
+          </div>
+          <p class="alert-sub">Low Stock Alerts</p>
+          <h3 class="alert-number">12</h3>
+        </div>
+      </section>
+       <!-- CONTENT GRID -->
+       <section class="content-grid">
+        <!-- RECENT SALES TABLE -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2>Recent Sales</h2>
+              <p>Latest transactions from your checkout counters.</p>
+            </div>
+            <a href="#" class="link">View All →</a>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>ORDER ID</th>
+                <th>CUSTOMER</th>
+                <th>STATUS</th>
+                <th>AMOUNT</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#ORD-9021</td>
+                <td>Alice Thompson</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>$142.50</td>
+              </tr>
+              <tr>
+                <td>#ORD-9020</td>
+                <td>Michael Chen</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>$64.20</td>
+              </tr>
+              <tr>
+                <td>#ORD-9019</td>
+                <td>Sarah Jenkins</td>
+                <td><span class="status pending">Pending</span></td>
+                <td>$210.00</td>
+              </tr>
+              <tr>
+                <td>#ORD-9018</td>
+                <td>Robert Davis</td>
+                <td><span class="status completed">Completed</span></td>
+                <td>$12.95</td>
+              </tr>
+              <tr>
+                <td>#ORD-9017</td>
+                <td>Emily Wilson</td>
+                <td><span class="status cancelled">Cancelled</span></td>
+                <td>$88.40</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- RECENTLY ADDED -->
+        <div class="card">
+          <div class="card-header">
+            <div>
+              <h2>Recently Added</h2>
+              <p>New items in your inventory.</p>
+            </div>
+          </div>
+          <div class="product-list">
+            <div class="product-item">
+              <img src="https://placehold.co/40x40/FF6B6B/FFFFFF?text=🍎" alt="Apple">
+              <div class="product-info">
+                <p class="product-name">Organic Gala Apples</p>
+                <p class="product-cat">Category: Fruits</p>
+              </div>
+              <div class="product-price">
+                <p>$4.99</p>
+                <span>2 hrs ago</span>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="https://placehold.co/40x40/4ECDC4/FFFFFF?text=🥛" alt="Milk">
+              <div class="product-info">
+                <p class="product-name">Farm Fresh Milk</p>
+                <p class="product-cat">Category: Dairy</p>
+              </div>
+              <div class="product-price">
+                <p>$3.50</p>
+                <span>5 hrs ago</span>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="https://placehold.co/40x40/FFE66D/000?text=🍞" alt="Bread">
+              <div class="product-info">
+                <p class="product-name">Sourdough Loaf</p>
+                <p class="product-cat">Category: Bakery</p>
+              </div>
+              <div class="product-price">
+                <p>$8.00</p>
+                <span>1 day ago</span>
+              </div>
+            </div>
+            <div class="product-item">
+              <img src="https://placehold.co/40x40/95E1D3/FFFFFF?text=🥑" alt="Avocado">
+              <div class="product-info">
+                <p class="product-name">Haas Avocados</p>
+                <p class="product-cat">Category: Fruits</p>
+              </div>
+              <div class="product-price">
+                <p>$2.25</p>
+                <span>2 days ago</span>
+              </div>
+            </div>
+          </div>
+          <a href="#" class="link center-link">View Product Catalog</a>
+        </div>
+      </section>
+    </main>
+
+      
+    </div>
+    <script src="nav.js"></script>
+</body>
+</html>

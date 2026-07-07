@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="stockin.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9b4eb7b55e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+   
+    <div class="container">
+        
+        <!----sidebar start ----->
+
+        <aside class="sidebar">
+            <div class="sidebar-header">
+            
+
+                <div class="logo-icon">
+                    <img src="logo.png" alt="">
+                    <h2>Shop managment</h2>
+                </div>
+                
+            </div>
+            <nav class="sidebar-nav">
+                <a href="website.html" class="nav-link active"><span><i class="fa-solid fa-house"></i></span>Home</a>
+                <a href="stockin.html" class="nav-link"><span><i class="fa-solid fa-arrow-trend-down"></i></span>Stock In</a>
+                <a href="sales.html" class="nav-link"><span><i class="fa-solid fa-tag"></i></span>sales</a>
+                <a href="customer.html" class="nav-link"><span><i class="fa-solid fa-user"></i></span>Costumer</a>
+                <a href="reports.html" class="nav-link"><span><i class="fa-solid fa-chart-area"></i></span>Reports</a>
+                <a href="#" class="nav-link"><span><i class="fa-solid fa-bars"></i></span>settings</a>
+
+            </nav>
+            <div class="sidebar-footer">
+                <img src="Shop Owner Profile.png" alt="user">
+                <div>
+                    <p class="user-name">John,s Groceries</p>
+                <p class="user-role">Admin Access</p>
+
+                </div>
+            </div>
+
+        </aside>
+
+
+        <!-- SIDEBAR END -->
+         <!-- MAIN CONTENT - YE HAR PAGE PE CHANGE HOGA -->
+        <main class="main-content">
+            <!-- Top Bar -->
+            <header class="top-bar">
+                <input type="text" placeholder="Search products by name, barcode or category...">
+                <div class="user-info">
+                    <span class="icon">🔔</span>
+                    <span class="icon">?</span>
+                    <div class="profile">
+                        <img src="https://i.pravatar.cc/40" alt="User">
+                        <div>
+                            <p>Alex Manager</p>
+                            <small>ADMIN</small>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Page Header -->
+            <div class="page-header">
+                <div>
+                    <h1>Products Management</h1>
+                    <p>Manage your inventory, prices, and stock levels in real-time.</p>
+                </div>
+                <div class="header-buttons">
+                    <button class="btn btn-white">🗑️ Delete Product</button>
+                    <button class="btn btn-blue">✏️ Edit Product</button>
+                    <button class="btn btn-dark">+ Add Product</button>
+                </div>
+            </div>
+
+            <!-- Stats Cards -->
+            <section class="stats-grid">
+                <div class="stat-card">
+                    <p>Total Products</p>
+                    <h2>1,284</h2>
+                    <small class="green">+12% from last month</small>
+                </div>
+                <div class="stat-card">
+                    <p>Low Stock Alerts</p>
+                    <h2>24</h2>
+                    <small class="orange">Action required soon</small>
+                </div>
+                <div class="stat-card">
+                    <p>Inventory Value</p>
+                    <h2>$45,290.00</h2>
+                    <small class="gray">Stable margin</small>
+                </div>
+                <div class="stat-card">
+                    <p>Out of Stock</p>
+                    <h2>08</h2>
+                    <small class="red">Critical</small>
+                </div>
+            </section>
+
+            <!-- Inventory Table -->
+            <section class="inventory-list">
+                <div class="list-header">
+                    <h3>Inventory List</h3>
+                    <div class="list-icons">⚙️ ⬇️</div>
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Barcode</th>
+                            <th>Category</th>
+                            <th>Buying Price</th>
+                            <th>Selling Price</th>
+                            <th>Quantity</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://via.placeholder.com/40" alt=""> Minimalist Wristwatch<br><small>Premium Collection</small></td>
+                            <td>8934021902</td>
+                            <td><span class="tag">Accessories</span></td>
+                            <td>$45.00</td>
+                            <td>$120.00</td>
+                            <td>142</td>
+                            <td><span class="status in-stock">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://via.placeholder.com/40" alt=""> Noise-Cancelling Headphones<br><small>Electronics</small></td>
+                            <td>77210984421</td>
+                            <td><span class="tag">Electronics</span></td>
+                            <td>$180.00</td>
+                            <td>$349.99</td>
+                            <td>12</td>
+                            <td><span class="status low-stock">Low Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://via.placeholder.com/40" alt=""> Aero Performance Sneakers<br><small>Footwear</small></td>
+                            <td>5420011832</td>
+                            <td><span class="tag">Sports</span></td>
+                            <td>$85.00</td>
+                            <td>$129.50</td>
+                            <td>85</td>
+                            <td><span class="status in-stock">In Stock</span></td>
+                        </tr>
+                        <tr>
+                            <td><img src="https://via.placeholder.com/40" alt=""> Organic Hydrating Serum<br><small>Health & Beauty</small></td>
+                            <td>11988234056</td>
+                            <td><span class="tag">Beauty</span></td>
+                            <td>$12.50</td>
+                            <td>$28.00</td>
+                            <td>0</td>
+                            <td><span class="status out-stock">Out of Stock</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+
+
+    </div>
+    
+<script src="nav.js"></script>
+</body>
+</html>

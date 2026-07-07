@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="reports.css">
+    <link rel="stylesheet" href="responsive.css">
+    <script src="https://kit.fontawesome.com/9b4eb7b55e.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <!----sidebar start ----->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+            
+
+                <div class="logo-icon">
+                    <img src="logo.png" alt="">
+                    <h2>Shop managment</h2>
+                </div>
+                
+            </div>
+            <nav class="sidebar-nav">
+                <a href="website.html" class="nav-link"><span><i class="fa-solid fa-house"></i></span>Home</a>
+                <a href="stockin.html" class="nav-link"><span><i class="fa-solid fa-arrow-trend-down"></i></span>Stock In</a>
+                <a href="sales.html" class="nav-link"><span><i class="fa-solid fa-tag"></i></span>sales</a>
+                <a href="customer.html" class="nav-link"><span><i class="fa-solid fa-user"></i></span>Costumer</a>
+                <a href="reports.html" class="nav-link active"><span><i class="fa-solid fa-chart-area"></i></span>Reports</a>
+                <a href="#" class="nav-link"><span><i class="fa-solid fa-bars"></i></span>settings</a>
+
+            </nav>
+            <div class="sidebar-footer">
+                <img src="Shop Owner Profile.png" alt="user">
+                <div>
+                    <p class="user-name">John,s Groceries</p>
+                <p class="user-role">Admin Access</p>
+
+                </div>
+            </div>
+
+        </aside>
+
+        <!-- SIDEBAR END -->
+         <!-- MAIN CONTENT -->
+        <main class="main-content">
+            <header class="top-bar">
+                <input type="text" placeholder="🔍 Search reports...">
+                <div class="user-info">
+                    <span class="icon">🔔</span>
+                    <span class="icon">?</span>
+                    <button class="btn btn-green">+ New</button>
+                </div>
+            </header>
+
+            <div class="page-header">
+                <div>
+                    <h1>Analytics Overview</h1>
+                    <p>Real-time data for your business performance.</p>
+                </div>
+                <div class="header-buttons">
+                    <select class="date-filter">
+                        <option>📅 Last 30 Days</option>
+                        <option>Last 7 Days</option>
+                        <option>Last 12 Months</option>
+                    </select>
+                    <button class="btn btn-white">⬇️ Download Report</button>
+                </div>
+            </div>
+
+            <!-- TOP 3 CARDS -->
+            <section class="report-stats">
+                <div class="report-card">
+                    <div class="report-icon blue">📅</div>
+                    <div>
+                        <p>DAILY SALES <span class="up">↗ 12%</span></p>
+                        <h2>$1,248.50</h2>
+                        <div class="mini-bar"></div>
+                    </div>
+                </div>
+                <div class="report-card">
+                    <div class="report-icon light-blue">📅</div>
+                    <div>
+                        <p>WEEKLY SALES <span class="up">↗ 8%</span></p>
+                        <h2>$8,940.00</h2>
+                        <div class="mini-bar"></div>
+                    </div>
+                </div>
+                <div class="report-card">
+                    <div class="report-icon dark-blue">📅</div>
+                    <div>
+                        <p>MONTHLY SALES <span class="down">↘ 2%</span></p>
+                        <h2>$34,210.00</h2>
+                        <div class="mini-bar"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- MIDDLE 2 COLUMNS -->
+            <section class="report-grid">
+                <!-- TOP SELLING -->
+                <div class="inventory-list">
+                    <div class="list-header">
+                        <h3>Top Selling Products</h3>
+                        <a href="#">View All ></a>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://i.imgur.com/8Km9tLL.png" alt="">
+                        <div><b>Premium Running Shoes</b><br><small>$129.99</small></div>
+                        <div class="right">154 Sold</div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://i.imgur.com/8Km9tLL.png" alt="">
+                        <div><b>Minimalist Watch</b><br><small>$249.50</small></div>
+                        <div class="right">98 Sold</div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://i.imgur.com/8Km9tLL.png" alt="">
+                        <div><b>Wireless Headphones</b><br><small>$89.00</small></div>
+                        <div class="right">82 Sold</div>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://i.imgur.com/8Km9tLL.png" alt="">
+                        <div><b>Designer Sunglasses</b><br><small>$59.00</small></div>
+                        <div class="right">64 Sold</div>
+                    </div>
+                </div>
+
+                <!-- LOW STOCK -->
+                <div class="inventory-list">
+                    <div class="list-header">
+                        <h3>Low Stock Alert</h3>
+                        <span class="tag red">8 Items Urgent</span>
+                    </div>
+                    <table class="small-table">
+                        <thead>
+                            <tr><th>Product</th><th>In Stock</th><th>Action</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><b>Organic Green Tea</b><br><small>SKU: BEV-092</small></td>
+                                <td>3 units</td>
+                                <td><button class="btn btn-blue small">Order More</button></td>
+                            </tr>
+                            <tr>
+                                <td><b>Silk Pillowcase</b><br><small>SKU: HOM-101</small></td>
+                                <td>5 units</td>
+                                <td><button class="btn btn-blue small">Order More</button></td>
+                            </tr>
+                            <tr>
+                                <td><b>Cotton Tote Bag</b><br><small>SKU: ACC-882</small></td>
+                                <td>2 units</td>
+                                <td><button class="btn btn-blue small">Order More</button></td>
+                            </tr>
+                            <tr>
+                                <td><b>Ceramic Mug Set</b><br><small>SKU: KIT-443</small></td>
+                                <td>8 units</td>
+                                <td><button class="btn btn-blue small">Order More</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- BOTTOM CARD -->
+            <section class="prediction-card">
+                <div>
+                    <h3>📦 Inventory Prediction</h3>
+                    <p>Based on the last 30 days of sales, we predict you will need to restock 12 categories by next Tuesday to maintain service levels.</p>
+                    <div class="efficiency">
+                        <div class="circle">82%</div>
+                        <span>Efficiency</span>
+                    </div>
+                </div>
+                <button class="btn btn-green">Optimize Inventory</button>
+            </section>
+
+        </main>
+    </div>
+    <script src="nav.js"></script>
+</body>
+</html>
